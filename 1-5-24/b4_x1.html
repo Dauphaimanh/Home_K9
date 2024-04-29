@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Subcribe</title>
+    <style>
+        button,
+        input {
+        padding: 7px 15px 7px 15px;
+        border-radius: 3px;
+        border: none;
+        }
+        footer {
+        padding: 5px;
+        background-color: #708090;
+        margin-top: 10px;
+        border-radius: 5px;
+        }
+        .sub-content,
+        .sub-btn {
+        padding-left: 10px;
+        }
+        footer:hover button {
+        color: #fff;
+        background-color: #e49b0f;
+        }
+        footer:hover input {
+        background-color: #ddd;
+        }
+        footer:hover #input-id {
+        color: #e49b0f;
+        }
+    </style>
+</head>
+<body>
+    <footer>
+        <div class="sub-content">
+            <h3><span style="color: #E49B0F;">Earn income</span> with your CSS skills</h3>
+            <p>Sign up and we'll send you the best free lance opportunities straight to your inbox.
+                We're building the largest self-service freelancing marketplace for people like you.
+            </p>
+        </div>
+        <div class="sub-btn">
+            <form action="#">
+                <input 
+                    id="input-id"
+                    type="email"
+                    name="email"
+                    placeholder="Email address ..">
+                <button
+                    type="submit"
+                    class="btn-form">
+                    Send Me Opportunities
+                </button>
+            </form>
+        </div>
+    </footer>
+</body>
+</html>

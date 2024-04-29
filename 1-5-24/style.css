@@ -1,0 +1,75 @@
+/* Custom Blockquote */
+blockquote p {
+  padding: 10px;
+  background: #faf9f6;
+  border-radius: 6px;
+}
+blockquote p::before {
+  content: "\201C";
+  font-size: 30px;
+}
+blockquote p::after {
+  content: "\201D";
+  font-size: 30px;
+}
+/* Custom List */
+ul li:nth-child(1) {
+  list-style: "🦍  ";
+}
+ul li:nth-child(2) {
+  list-style: "🦬  ";
+}
+ul li:nth-child(3) {
+  list-style: "🦣  ";
+}
+ul li:nth-child(4) {
+  list-style: "🦀  ";
+}
+/* HTML */
+pre,
+p {
+  display: inline;
+}
+.pink {
+  color: #ec5599;
+}
+.muto-color {
+  color: #36454f;
+}
+.wrapp-head,
+.sub-content {
+  padding-bottom: 20px;
+}
+.wrapp-content {
+  border: solid;
+  border-radius: 5px;
+  border-color: #888888;
+  padding: 20px;
+}
+/* Form Subcribe */
+button,
+input {
+  padding: 7px 15px 7px 15px;
+  border-radius: 3px;
+  border: none;
+}
+footer {
+  padding: 5px;
+  background-color: #708090;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+.sub-content,
+.sub-btn {
+  padding-left: 10px;
+}
+footer:hover button {
+  color: #fff;
+  background-color: #e49b0f;
+}
+footer:hover input {
+  background-color: #ddd;
+}
+footer:hover #input-id {
+  color: #e49b0f;
+}
