@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout</title>
+    <style>
+        .myhead {
+            text-align: center;
+            line-height: 0.5;
+            padding-bottom: 50px;
+        }
+        .wrapp {
+            margin: 30px;
+            display: inline-flex;
+        }
+        /* khung tranh */
+        .incontent {
+            padding: 60px;
+            text-align: center;
+            box-shadow: 0px 0px 10px 2px #ececec;
+        }
+        img {
+            width: auto;
+            height: 50px;
+            padding: 10px;
+            border: 2px solid #f2a944;
+            border-radius: 100%;
+            
+        }
+        p {
+            line-height: 1.2;
+        }
+        button {
+            color: #fff;
+            width: 100px;
+            height: 30px;
+            border: none;
+            border-radius: 1.5px;
+            background-color: #f2a944;
+        }
+    </style>
+</head>
+<body>
+    <div class="myhead">
+        <h1>Take a look at our services</h1>
+        <p>May i have your ID number so i cant <b>take a look</b> at your account ?</p>
+    </div>
+    <!--
+    incontent = card
+    wrapp = container
+    span = h4
+
+    -->
+    <div class="wrapp">
+        <div class="incontent">
+            <img src="https://www.svgrepo.com/show/533059/camera.svg" alt="camera">
+            <h4>Photography</h4>
+            <p>The word photography is can quite literally translate to drawing with light.</p>
+            <button type="submit">Read More</button>
+        </div>
+        <div class="incontent">
+            <img src="https://www.svgrepo.com/show/506814/computer.svg" alt="macbook">
+            <h4>Web Designing</h4>
+            <p>Web design refers to the look, layout and content or a website with user experience</p>
+            <button type="submit">Read More</button>
+        </div>
+        <div class="incontent">
+            <img src="https://www.svgrepo.com/show/532727/video.svg" alt="video">
+            <h4>Videography</h4>
+            <p>Videography refers to the electronic capture of moving image electronic media</p>
+            <button type="submit">Read More</button>
+        </div>
+    </div>
+</body>
+</html>
