@@ -18,7 +18,6 @@
         body {
             width: 500px;
             padding: 20px;
-            border: 1px solid red;
             font-family: "Lato", sans-serif;
         }
         h2 {
@@ -28,12 +27,10 @@
         p span {
             color: #e3242b;
         }
-        /* Button and Checkbox */
         .under {
             display: flex;
             align-items: center;
             justify-content: space-between;
-            /* split the checkbox and button */
         }
         button {
             width: 120px;
@@ -42,29 +39,6 @@
             color: #fff;
             border: none;
         }
-        /* Upder Field */
-        .unper-field {
-            top: -50px;
-            left: 55px;
-            height: 30px;
-            color: #fff;
-            padding: 0 10px;
-            display: flex;
-            position: absolute;
-            align-items: center;
-            justify-content: center;
-            background-color: #808080;
-        }
-        .in-form:active .unper-field {
-            display: inline-flex;
-        }
-        .upper-triangle {
-            position: absolute;
-            border: 10px solid #808080;
-            bottom: -15px;
-            left: 10px;
-        }
-        /* open box */
         input[type="text"], select, textarea {
             width: 100%;
             padding: 12px;
@@ -79,7 +53,6 @@
             margin-top: 10px;
             margin-bottom: 10px;
         }
-        /* open box */
     </style>
 </head>
 <body>
@@ -91,53 +64,18 @@
                 Send us your message or just say hi with our contact form or directly via phone, we love to chat.
             </p>
         </div>
-        <!--
-            item-form = in-form 
-            input-item = blacklist
-            left-item = fa-left
-            content-hidden = upper-field
-            content-hidden_tamgiac = upper-triangle
-            fa-2xs = fa-right
-            content-star-mark = star
-            textarea-item = message
-
-            input-ari ở phần textarea
-        -->
         <form>
             <!-- Name -->
             <div class="in-form">
                 <input type="text" id="blacklist" placeholder="Your name">
-                <i class="fa-solid fa-user fa-left"></i>
-                <div class="upper-field">
-                    <p>Enter your name</p>
-                    <div class="upper-triangle"></div>
-                </div>
-                <div class="star">
-                    <i class="fa-regular fa-star fa-right"></i>
-                    <i class="fa-regular fa-circle-xmark fa-right"></i>
-                </div>
             </div>
             <!-- Mail -->
             <div class="in-form">
                 <input type="email" id="blacklist" placeholder="contact@fullstack.edu.vn">
-                <i class="fa-regular fa-envelope"></i>
-                <div class="upper-field">
-                    <p>Enter your mail</p>
-                    <div class="upper-triangle"></div>
-                </div>
-                <div class="star">
-                    <i class="fa-regular fa-star fa-right"></i>
-                    <i class="fa-regular fa-circle-xmark fa-right"></i>
-                </div>
             </div>
             <!-- Phone -->
             <div class="in-form">
                 <input type="text" id="blacklist" placeholder="0246.329.1102">
-                <i class="fa-solid fa-phone-flip fa-left"></i>
-                <div class="upper-field">
-                    <p>Enter your phone</p>
-                    <div class="upper-triangle"></div>
-                </div>
             </div>
             <!-- Subject -->
             <div class="in-form">
@@ -145,30 +83,14 @@
                     <option value="0">Subject</option>
                     <option value="1">Yên Hoà</option>
                 </select>
-                <i class="fa-solid fa-folder-plus fa-left"></i>
-                <div class="star">
-                    <i class="fa-solid fa-wave-square"></i>
-                </div>
             </div>
             <!-- Textarea -->
             <div class="in-form">
                 <textarea name="message" id="message" cols="30" rows="10"></textarea>
-                <i class="fa-solid fa-message fa-left"></i>
-                <div class="star">
-                    <i class="fa-regular fa-star fa-right"></i>
-                    <i class="fa-regular fa-circle-xmark fa-right"></i>
-                </div>
             </div>
-            <!-- Under
-            copy = under
-            check-cp = in-under
-            checkbox__sm = checkbox
-            tick-check = checkbox23
-            -->
             <div class="under">
-                <div class="in-under">
+                <div>
                     <input type="checkbox" id="checkbox">
-                    <span class="checkbox23"></span>
                     <label for="checkbox">Send me a copy of this message</label>
                 </div>
                 <button type="submit" class="button">S E N D</button>
