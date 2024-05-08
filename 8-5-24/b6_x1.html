@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        @font-face {
+            font-family: "Lobster";
+            src: url(./fonts/Lobster-Regular.ttf);
+        }
+        @font-face {
+            font-family: "Lato";
+            src: url(./fonts/Lato-Regular.ttf);
+        }
+        /* text */
+        body {
+            width: 500px;
+            padding: 20px;
+            border: 1px solid red;
+            font-family: "Lato", sans-serif;
+        }
+        h2 {
+            font-family: "Lobster", sans-serif;
+            font-size: 40px;
+        }
+        p span {
+            color: #e3242b;
+        }
+        /* Button and Checkbox */
+        .under {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            /* split the checkbox and button */
+        }
+        button {
+            width: 120px;
+            height: 30px;
+            background: #e3242b;
+            color: #fff;
+            border: none;
+        }
+        /* Upder Field */
+        .unper-field {
+            top: -50px;
+            left: 55px;
+            height: 30px;
+            color: #fff;
+            padding: 0 10px;
+            display: flex;
+            position: absolute;
+            align-items: center;
+            justify-content: center;
+            background-color: #808080;
+        }
+        .in-form:active .unper-field {
+            display: inline-flex;
+        }
+        .upper-triangle {
+            position: absolute;
+            border: 10px solid #808080;
+            bottom: -15px;
+            left: 10px;
+        }
+        /* open box */
+        input[type="text"], select, textarea {
+            width: 100%;
+            padding: 12px;
+            box-sizing: border-box;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        input[type=email] {
+            width: 100%;
+            padding: 12px;
+            box-sizing: border-box;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        /* open box */
+    </style>
+</head>
+<body>
+    <div>
+        <div>
+            <h2>Hey There</h2>
+            <p>
+                <span>We'd like to hear from you. </span>
+                Send us your message or just say hi with our contact form or directly via phone, we love to chat.
+            </p>
+        </div>
+        <!--
+            item-form = in-form 
+            input-item = blacklist
+            left-item = fa-left
+            content-hidden = upper-field
+            content-hidden_tamgiac = upper-triangle
+            fa-2xs = fa-right
+            content-star-mark = star
+            textarea-item = message
+
+            input-ari ở phần textarea
+        -->
+        <form>
+            <!-- Name -->
+            <div class="in-form">
+                <input type="text" id="blacklist" placeholder="Your name">
+                <i class="fa-solid fa-user fa-left"></i>
+                <div class="upper-field">
+                    <p>Enter your name</p>
+                    <div class="upper-triangle"></div>
+                </div>
+                <div class="star">
+                    <i class="fa-regular fa-star fa-right"></i>
+                    <i class="fa-regular fa-circle-xmark fa-right"></i>
+                </div>
+            </div>
+            <!-- Mail -->
+            <div class="in-form">
+                <input type="email" id="blacklist" placeholder="contact@fullstack.edu.vn">
+                <i class="fa-regular fa-envelope"></i>
+                <div class="upper-field">
+                    <p>Enter your mail</p>
+                    <div class="upper-triangle"></div>
+                </div>
+                <div class="star">
+                    <i class="fa-regular fa-star fa-right"></i>
+                    <i class="fa-regular fa-circle-xmark fa-right"></i>
+                </div>
+            </div>
+            <!-- Phone -->
+            <div class="in-form">
+                <input type="text" id="blacklist" placeholder="0246.329.1102">
+                <i class="fa-solid fa-phone-flip fa-left"></i>
+                <div class="upper-field">
+                    <p>Enter your phone</p>
+                    <div class="upper-triangle"></div>
+                </div>
+            </div>
+            <!-- Subject -->
+            <div class="in-form">
+                <select name="Subject" id="blacklist">
+                    <option value="0">Subject</option>
+                    <option value="1">Yên Hoà</option>
+                </select>
+                <i class="fa-solid fa-folder-plus fa-left"></i>
+                <div class="star">
+                    <i class="fa-solid fa-wave-square"></i>
+                </div>
+            </div>
+            <!-- Textarea -->
+            <div class="in-form">
+                <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                <i class="fa-solid fa-message fa-left"></i>
+                <div class="star">
+                    <i class="fa-regular fa-star fa-right"></i>
+                    <i class="fa-regular fa-circle-xmark fa-right"></i>
+                </div>
+            </div>
+            <!-- Under
+            copy = under
+            check-cp = in-under
+            checkbox__sm = checkbox
+            tick-check = checkbox23
+            -->
+            <div class="under">
+                <div class="in-under">
+                    <input type="checkbox" id="checkbox">
+                    <span class="checkbox23"></span>
+                    <label for="checkbox">Send me a copy of this message</label>
+                </div>
+                <button type="submit" class="button">S E N D</button>
+            </div>
+        </form>
+</body>
+</html>
