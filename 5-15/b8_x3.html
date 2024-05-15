@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title># Khu vực bất động sản</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <style>
+        * {
+            border: 0;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        } /* reset CSS */
+
+        body {
+            font-family: "Asap", sans-serif;
+        }
+
+        .container {
+            width: 90%;
+            height: 500px;
+            margin: 30px auto;
+        }
+
+        h2 {
+            color: #28231d;
+            padding: 0 0 10px;
+        }
+
+        .location {
+            display: block;
+        }
+
+        ul {
+            list-style: none;
+        }
+        
+        ul li {
+            font-size: 9px;
+            margin: 0 6px;
+            border-radius: 50px;
+            display: inline-block;
+            background: #e5e5e5;
+        }
+        ul li a:hover {
+            color: #fff;
+            border-radius: 50px;
+            background: #af7c37;
+        }
+        
+        ul li a {   
+            display: block;
+            color: #28231d;
+            border: none;
+            padding: 10px 25px;
+            text-decoration: none; /* bỏ gạch chân thẻ a */
+        }
+
+        .img-box {
+            gap: 20px;
+            display: grid;
+            padding: 20px;
+            align-items: center;
+            grid-template-columns: auto auto auto;
+        }
+        .img-box .img {
+            display: flex;
+            justify-content: center;
+            position: relative;
+        }
+        .img-box .img p:nth-child(1) {
+            top: 25px;
+            left: 30px;
+        }
+        .img-src {
+            width: 300px;
+            height: 150px;
+        }
+
+        
+        h3 {
+            top: 25px;
+            left: 40px;
+            color: #fff;
+            position: absolute;
+        }
+        p {
+            left: 30px;
+            bottom: 15px;
+            color: #fff;
+            position: absolute;
+        }
+        span {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Khám phá bất động sản các khu vực nổi bật</h2>
+        <div class="location">
+            <ul>
+                <li><a href="">Hồ Chí Minh <br><i>50.123 bất động sản</i> </a></li>
+                <li><a href="">Hà Nội <br><i>18.123 bất động sản</i> </a></li>
+                <li><a href="">Bình Dương <br><i>7.123 bất động sản</i> </a></li>
+                <li><a href="">Đồng Nai <br><i>6.123 bất động sản</i> </a></li>
+                <li><a href="">Bà Rịa Vũng Tàu <br><i>5.123 bất động sản</i> </a></li>
+                <li><a href="">Đà Nẵng <br><i>4.123 bất động sản</i> </a></li>
+                <li><a href="">Long An <br><i>3.123 bất động sản</i> </a></li>
+                <li><a href="">Quảng Ninh <br><i>2.123 bất động sản</i> </a></li>
+            </ul>
+        </div>
+        <div class="img-box">
+            <div class="img">
+                <img src="./image/12thg4.jpeg" alt="#" class="img-src">
+                <h3>Quận 2</h3>
+                <p><span>4.186</span> bất động sản đang bán</p>
+            </div>
+            <div class="img">
+                <img src="./image/12thg4.jpeg" alt="#" class="img-src">
+                <h3>Quận 7</h3>
+                <p><span>4.664</span> bất động sản đang bán</p>
+            </div>
+            <div class="img">
+                <img src="./image/12thg4.jpeg" alt="#" class="img-src">
+                <h3>Quận 9</h3>
+                <p><span>3.702</span> bất động sản đang bán</p>
+            </div>
+            <div class="img">
+                <img src="./image/12thg4.jpeg" alt="#" class="img-src">
+                <h3>Quận Tân Bình</h3>
+                <p><span>3.062</span> bất động sản đang bán</p>
+            </div>
+            <div class="img">
+                <img src="./image/12thg4.jpeg" alt="#" class="img-src">
+                <h3>Thành Phố Thủ Đức</h3>
+                <p><span>2.843</span> bất động sản đang bán</p>
+            </div>
+            <div class="img">
+                <img src="./image/12thg4.jpeg" alt="#" class="img-src">
+                <h3>Huyện Bình Chánh</h3>
+                <p><span>3.235</span> bất động sản đang bán</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
