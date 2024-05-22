@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+} /* reset CSS */
+body {
+  background: #f2f2f2;
+}
+.ctn {
+  max-width: 100%;
+  padding: 20px;
+}
+
+.showa {
+  h3 {
+    font-size: 3em;
+  }
+  p {
+    font-size: 20px;
+  }
+  h3,
+  p {
+    color: #1a1d24;
+    padding: 10px;
+    text-align: center;
+  }
+}
+.reiwa {
+  display: flex;
+  .content {
+    width: 50%;
+    margin: 20px 0;
+    position: relative;
+    .fl-input {
+      font-size: 12px;
+      display: block;
+      height: 36px;
+      background: #f2f2f2;
+      border-radius: 4px;
+      box-sizing: border-box;
+      &:focus {
+        outline: none;
+        ~ .fl-label {
+          top: -5px;
+          font-size: 10px;
+        }
+      }
+    }
+    .fl-label {
+      font-size: 13px;
+      position: absolute;
+      left: 15px;
+      top: 11px;
+      background: #f2f2f2;
+      padding: 0 5px;
+      transition: 0.4s ease;
+    }
+  }
+}
+input,
+select {
+  width: 80%;
+  height: 40px;
+  padding-left: 19px;
+  font-size: 10px;
+  border-radius: 5px;
+  border: 1px solid #7d7d7d;
+}
+textarea {
+  width: 90%;
+  border-radius: 5px;
+  border: 1px solid #7d7d7d;
+}
+.content input:focus ~ label,
+.content input:valid ~ label {
+  top: -12px;
+  left: 0;
+  color: #ea2525;
+}
+button {
+  width: 100px;
+  height: 30px;
+  position: relative;
+  right: 50px;
+  display: block;
+  margin: 30px auto;
+  background: #343492;
+  border: none;
+  border-radius: 99px;
+  cursor: pointer;
+}

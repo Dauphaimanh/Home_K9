@@ -36,6 +36,9 @@ body {
   border-radius: 3px;
   border: 2px inset #4c0121;
 }
+.nine .pending button:hover {
+  cursor: none;
+}
 .nine form button:hover {
   color: #fff;
   cursor: pointer;
@@ -66,6 +69,7 @@ body {
   visibility: hidden;
 }
 .mini-box button:hover {
+  cursor: none;
   transform: scale(1.5);
   border: 1px solid #fff;
   span {

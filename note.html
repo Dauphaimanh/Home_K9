@@ -1,0 +1,243 @@
+/
+<!-- Used
+    #1B1B1B Eerie Black
+    #DD571C Fire
+
+
+¬ Rodan's skin is burgundy-colored and possesses a texture similar to molten rock with bumps and ridges along his chest and back. The lower-edges of his wing membrane appear to be lined with heated, red-glowing cracks, making it appear as if Rodan's wings are smoldering or are oozing lava when he's in flight. His injury from Mothra's stinger indicates Rodan does not bleed and revealed his body has a bright-yellow internalized light underneath the opaque skin. Using his wings to balance himself, Rodan can both walk and stand upright when he's not in flight.
+¬ The filmmakers recorded vocalizations of vultures, owls, penguins, and cranes to create Rodan's sounds.[2] Rodan also makes low, guttural clicks and growls that sound oddly similar to the MUTOs, albeit deeper in tone. Though, there are a few moments where Rodan's roar sounds roughly similar to his Showa roar.
+    - Known to some ancient civilizations as the "Fire Demon"
+    - Rodan has razor-sharp talons which are sufficient to rend and cut most materials.
+
+
+ -->
+<!-- v.4
+1,Selector 
+    ~ 
+        - chọn thẻ html ngang hàng và đứng sau
+        > ngang hàng và thuộc 1 cha
+    + 
+        - chọn thẻ html ngang hàng và đứng liền sau
+        > ngang hàng và thuộc 1 cha
+    , 
+        - chọn các selector có cùng nội dung
+        > selector1, selector 2, selector 3
+    tagname[tênthuộctính] : chọn thẻ html có thuộc tính
+    tagname[tênthuộctính="value"] : chọn thẻ html có thuộc tính và giá trị
+    tagname[tênthuộctính=^"value"] : chọn thẻ html có thuộc tính bắt đầu bằng giá trị
+    tagname[tênthuộctính=$"value"] : chọn thẻ html có thuộc tính kết thúc bằng giá trị
+    tagname[tênthuộctính=*"value"] : chọn thẻ html có giá trị nằm trong thuộc tính
+    tagname[tênthuộctính=~"value"] : chọn thẻ html có giá trị là 1 từ
+2, Pseudo Element :: phần tử giả
+    ¬ before :: thêm phần tử phía trước
+    ¬ after :: thêm phần tử phía sau
+        > before, after phải có thuộc tính content mới có hiệu lực
+    ¬ first-letter :: chọn ký tự đầu tiên
+    ¬ first-line :: chọn dòng đầu tiên
+    ¬ selection :: thay đổi khi bôi đen nội dung
+    ¬ placeholder :: thay đổi lại placeholder
+3, Pseudo Classes : lớp giả (hay còn gọi là trạng thái, state)
+    ¬ hover : khi chỏ chuột
+    ¬ avtive : khi click và giữ chuột
+    ¬ focus (chỉ hoạt động với form hoặc thẻ html có thuộc tính tabindex)
+    ¬ not : loại trừ
+    ¬ first-child : chọn thành phần con đầu tiên
+    ¬ last-child : chọn thành phần con cuối cùng
+    ¬ first-of-type : chọn thành phần cùng kiểu đầu tiên
+    ¬ last-of-type : chọn thành phần cùng kiểu cuối cùng
+    ¬ nth-child
+    ¬ nth-of-child
+    ¬ checked
+    ¬ disable
+«   initial : Giá trị mặc định của trình duyệt
+«   inherit : Kế thừa giá trị của thành phần cha
+ -->
+<!-- v.5
+1, font-size : thay đổi cỡ chữ
+    > font-size : value + unit
+    - px : Đơn vị tuyệt đối
+    - pt : Đơn vị tuyệt đối (1pt = 1.3px)
+    - em : Đơn vị tương đối (Tỷ lệ với thành phần cha)
+    - rem : Đơn vị tương đối (Tỷ lệ với giá trị mặc định của trình duyệt)
+    - % : Đơn vị tương đối (Tỷ lệ với thành phần cha)
+2, line-height : thay đổi chiều cao (dãn dòng)
+    > line-height : value
+3, text-decoration : thay đổi gạch ngang văn bảng
+    - none : không có gạch ngang
+    - underline : gạch dứoi
+    - overline : gạch trên
+    - line-through : gạch giữa
+4, text-transform : đổi kiểu chữ
+    - none : giữ nguyên
+    - uppercase : chữ hoa
+    - lowercase : chữ thường
+    - capitalize : viết hoa mỗi ký tự đầu
+5, letter-spacing: Khoảng cách mỗi ký tự
+6, word-spacing: Khoảng cách giữa mỗi từ
+7, text-align : căn chỉnh văn bản theo chiều ngang
+    - left
+    - right
+    - center
+    - justify : căn đều 2 bên
+-->
+<!-- v.6
+    - Buổi 9 -
+1, background
+    ¬ background-position (X,Y)
+        - Trục X
+            left
+            center
+            right
+            tương đối (%)
+            tuyệt đối
+        - Trục Y
+            top
+            center
+            bottom
+            tương đối (%)
+            tuyệt đối
+    ¬ background-size : thay đổi kích thước ảnh nền
+        - contain
+        - cover
+    ¬ background-attachment : cố định hay không background khi cuộn
+        - scroll : mặc định
+        - fixed : đứng im
+2, Border
+    ¬ borde-width : độ dày
+    ¬ border-style : kiểu viền
+        - solid
+        - double
+3, width, height
+    ¬ width: Thiết lập chiều rộng
+    ¬ height: Thiết lập chiều cao
+> Chỉ áp dụng với thẻ block, nếu muốn thẻ inline thiết lập được width, height > Chuyển thành block hoặc inline-block (Dùng thuộc tính display)
+4, overflow : xử lí nội dung bị tràn
+    ¬ visible : giữ nguyên
+    ¬ hidden : ẩn đi
+    ¬ scroll : tạo thanh cuộn
+    ¬ auto : tạo thanh cuộn
+ -->
+<!-- v.7
+    - Buổi 10 -
+1, padding
+    « padding không có giá trị âm & auto
+    « padding-top & padding-bottom không hoạt động với thẻ inline
+2, margin
+    « hỗ trợ giá trị âm & auto
+    « đơn vị % tỷ lệ theo width của thẻ cha
+    « padding-top & padding-bottom không hoạt động với thẻ inline
+3, float : trôi các thẻ html về phía trái hoặc phải
+    ¬ none
+    ¬ left
+    ¬ right
+    ¬ thuộc tính clear : ngăn không cho các thẻ html bị trôi bởi float
+        - left
+        - right
+        - both
+        > chỉ hoạt động với block
+-->
+<!-- v.8
+    - Buổi 11 -
+1, display
+    ¬ block
+    ¬ inline
+    ¬ inline-block
+    ¬ none > ẩn thẻ html (mất không gian hiển thị)
+2, visibility : ẩn / hiện thẻ html (khi ẩn đi không làm mất không gian)
+    ¬ visible : hiển thị
+    ¬ hidden : ẩn
+3, filter
+    ¬ opacity (number)
+    ¬ grayscale (number)
+    ¬ blur (number + unit)
+4, position : thay đổi vị trí các thẻ html
+    ¬ static : mặc định không có position
+    ¬ relative : tương đối với vị trí ban đầu
+    ¬ absolute : tuyệt đối
+    ¬ fixed : cố định khi kéo thanh cuộn
+    > các thuộc tính khi kích hoạt position (trừ static)
+        - top
+        - left
+        - right
+        - bottom
+        - z-index
+        - inset : bao gồm top left right bottom
+-->
+<!-- v.9
+    - Buổi 12 -
+1, Flex = Flexible Box Module
+    º kỹ thuật xây dựng các layout (bô cục) 1 cách linh hoạt
+    º có thể thay đổi hướng của trục main
+        flex có 2 thành phần
+            container (thẻ bọc)
+            flex item (thẻ con)
+        trục trong flex
+            main : trục chính (mặc định nằmg ngang)
+            cross : vuông cóc với trục chính
+    ¬ flex container
+        - display : flex > kích hoạt flexbox bên dưới
+        - flex-direction : chọn hướng cho trục chính
+            . row
+            . row-reverse
+            . column
+            . column-reverse
+        - justify-content : căn chỉnh các item theo hướng song song với main
+            . flex-start
+            . center
+            . flex-end
+            . space-around
+            . space-between
+            . space-evenly
+            . start
+            . end
+        - align-items : căn chỉnh các item theo hướng song song với cross
+            . stretch
+            . flex-start
+            . center
+            . flex-end
+            . baseline
+        - flex-wrap : bọc các item khi kích thước vượt quá container
+            . nowrap
+            . wrap
+            . wrap-reverse
+        - align-content : căn chỉnh các hàng & cột (chỉ áp dụng khi có nhiều hàng hoặc nhiều cột)
+            . stretch
+            . flex-start
+            . center
+            . flex-end
+            . space-around
+            . space-between
+            . space-evenly
+        - gap : thay đổi khoảng cách 'GIỮA' các item
+            . row-gap
+            . column-gap
+2, flex-item
+    ¬ flex-grow : number > lấp đầy các item để bù vào vị trí còn trống của container theo tỷ lệ nhất định (sẽ làm tăng kích thước)
+    ¬ flex-shrink : number > thiết lập tỷ lệ tự động co lại của flex-item khi tổng kích thước lớn hơn container
+    ¬ flex-basis : value + unit > thiết lập kích thước ban đầu cho flex-item
+    ¬ align-self : căn chỉnh i item theo hướng song song với cross
+        - stretch
+        - flex-start
+        - center
+        - flex-end
+        - baseline
+-->
+<!-- v.10
+    - Buổi 13 -
+1, transition : tạo di chuyển mượt mà với các thuộc tính css (chỉ áp dụng thuộc tính có giá trị là số)
+    ¬ transition-property : khai báo các thuộc tính css muốn chuyển động
+        - all
+        - css name
+        > mỗi thuộc tính cách nhau bởi dấu ','
+    ¬ transition-duration : thời gian để hoàn thành chuyển động (s,ms)
+    ¬ transition-delay : thời gian trễ trước khi chuyển động xảy ra
+    ¬ transition-timing-function : thiết lập tốc độ di chuyển
+        - ease (mặc định) : khởi động chậm > nhanh dần > kết thúc chậm
+        - ease-in : chậm > nhanh dần đến lúc kết thúc
+        - ease-out : nhanh > chậm dền đến lúc kết thúc
+        - ease-in-out : giống 'ease' (khác về chỉ số)
+        - linear : giữ tốc độ đều
+        - cubic-bezier (v1, v2, v3, v4)
+        - transition : property duration delay timing
+-->
+<!-- v.11 -->
