@@ -1,0 +1,72 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* h1 {
+  color: green;
+}
+
+h1 > span > span {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  color: red;
+}
+
+h1 > span {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 100%;
+  bottom: 0;
+  overflow: hidden;
+  transition: top 1s ease;
+}
+
+h1:hover > span {
+  top: 0;
+} */
+
+/* first 1 hour */
+.box {
+  width: 200px;
+  height: 300px;
+  background: #3e7d3e;
+  color: #fff;
+  font-size: 1.2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  transition: all 2.4s ease;
+}
+.wrap {
+  padding: 50px;
+  border: 3px solid #eb1313;
+  position: relative;
+}
+.wrap:hover .box {
+  rotate: 40deg;
+}
+
+.left,
+.right {
+  color: #fff;
+  border: 0;
+  top: 50%;
+  padding: 5px 15px;
+  position: absolute;
+  background: hsl(303, 70%, 67%);
+  border-radius: 99px;
+  translate: 0 -50%;
+  cursor: none;
+}
+.left {
+  left: 10px;
+}
+.right {
+  right: 10px;
+}

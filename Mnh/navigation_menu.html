@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>#Navigation Menu</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        } /* reset CSS */
+
+        body {
+            background: #c5c6d0;
+        }
+
+        .center {
+            margin: 10%;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav {
+            width: 200px;
+            display: flex;
+            padding: 10px;
+            background: #fff;
+            flex-direction: column;
+            
+            border-radius: 5px;
+            gap: 10px;
+
+            a {
+                color: #020403;
+                padding: 10px;
+                font-weight: bold;
+                text-decoration: none;
+
+                border-radius: 5px;
+                transition: all 333ms ease;
+            }
+            
+            a:hover {
+                color: #fff;
+                background: #FF0800;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="center">
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#shop">Shop</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </div>
+</body>
+</html>

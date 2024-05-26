@@ -1,0 +1,68 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} /* reset CSS */
+
+body {
+  background: #b5b2b2;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.container {
+  width: 60%;
+  margin: 10% auto;
+}
+
+.container ul {
+  height: fit-content;
+  position: relative;
+  list-style: none;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container ul li {
+  width: 100%;
+  background: #fff;
+  display: inline-block;
+}
+
+.container ul .label {
+  margin: 2px;
+  padding: 10px 20px;
+  cursor: pointer;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container ul .label:hover {
+  color: #fff;
+  background: #3a7ea5;
+}
+
+.container ul li .drop {
+  width: 100%;
+  left: 0;
+  right: 0;
+  padding: 20px;
+  background: #fff;
+
+  position: absolute;
+  overflow-x: scroll;
+  transform-origin: top;
+  transform: rotateX(-90deg);
+  opacity: 0;
+
+  transition-property: opacity, transform;
+  transition: 666ms ease;
+}
+
+.container ul li input:checked ~ .drop {
+  transform: rotateX(0deg);
+  opacity: 1;
+}
