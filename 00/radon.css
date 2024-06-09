@@ -50,6 +50,9 @@ a {
         background: #75b7eb;
       }
     }
+    .bar {
+      display: none;
+    }
   }
 }
 
@@ -61,10 +64,10 @@ a {
     display: block;
     position: fixed;
     top: 0;
-    right: 0;
+    left: 0;
     bottom: 0;
     min-width: 250px;
-    background: #000;
+    background: #353434;
     ul {
       display: block;
       padding: 20px;
@@ -75,5 +78,52 @@ a {
         }
       }
     }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .menu {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    min-width: 250px;
+    background: #353434;
+    transform: translateX(-100%);
+    transition: all 0.4s ease-in-out;
+    ul {
+      display: block;
+      padding: 20px;
+      li {
+        a {
+          color: #fff;
+          padding: 10px 0;
+        }
+      }
+    }
+  }
+
+  .header .row {
+    .contact {
+      display: none;
+    }
+    .bar {
+      display: block;
+    }
+  }
+  .container {
+    padding: 0 20px;
+  }
+
+  input[type="checkbox"]:checked ~ .menu {
+    display: block;
+    transform: translateX(0) !important ;
+  }
+
+  input[type="checkbox"]:checked ~ .overlay {
+    position: absolute;
+    inset: 0;
+    background-color: #3333336a;
   }
 }

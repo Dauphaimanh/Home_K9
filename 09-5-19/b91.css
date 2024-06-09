@@ -12,7 +12,7 @@ header {
 /* Header Styling of Start */
 .nav-contain,
 .nav-second {
-  margin: 40px 50px;
+  margin: 4% 7%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -44,6 +44,25 @@ header {
     font-size: 1.1rem;
     border-right: 1px solid #a9a9a9;
   }
+  .fa-cart-shopping::after {
+    width: 25px;
+    height: 25px;
+    content: "2";
+    position: absolute;
+    color: #fff;
+    background: #f04545;
+
+    font-family: "Poppins", serif;
+    font-weight: 700;
+    font-size: 15px;
+
+    top: 45px;
+    right: 74px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 99px;
+  }
 }
 .nav-search input:focus::placeholder {
   color: transparent;
@@ -69,13 +88,14 @@ header {
 }
 
 .ichigo-box {
-  width: 180px;
+  width: fit-content;
   padding: 8px 15px;
   border: none;
   border-radius: 99px;
+  background: #fbecec;
+
   display: flex;
   align-items: center;
-  background: #fbecec;
   gap: 10px;
   .ichigo {
     color: #ea5558;
@@ -105,7 +125,6 @@ header {
   margin-top: 50px;
   img {
     margin-left: 2px;
-    border: 1px solid #a9a9a94f;
     border-radius: 99px;
   }
   img,
@@ -182,11 +201,13 @@ header {
       height: 300px;
       padding: 10px;
       background: #fff;
+      border-radius: 14px;
+
       display: flex;
       flex-direction: column;
       justify-content: space-between;
       align-items: center;
-      border-radius: 14px;
+      z-index: 1;
       /* border: 1px solid #a52a2a; */
       h3 {
         color: #2e2e2e;
@@ -196,6 +217,26 @@ header {
         color: #878787;
         text-align: center;
       }
+    }
+
+    .backgr {
+      width: 260px;
+      height: 310px;
+      left: 30px;
+
+      position: absolute;
+      border-radius: 14px;
+      background: #f25e5e;
+
+      z-index: 1;
+      transform: rotate(-5deg);
+      transition: all 333ms ease;
+    }
+
+    .body-item:hover .backgr {
+      top: -5px;
+      left: 40px;
+      z-index: 2;
     }
   }
 }
@@ -235,7 +276,7 @@ header {
         font-size: 16px;
       }
       .app-btn {
-        margin: ;
+        margin-right: 10px;
         padding: 10px 0;
         width: 200px;
         display: inline-flex;
@@ -311,3 +352,7 @@ footer {
     }
   }
 }
+/*
+991px 
+767px
+*/

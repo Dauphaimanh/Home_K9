@@ -1,0 +1,15 @@
+body {
+  font-family: "Courier New", Courier, monospace;
+}
+
+div {
+  color: red;
+}
+
+.box {
+  color: green;
+}
+
+#content {
+  color: blueviolet;
+}

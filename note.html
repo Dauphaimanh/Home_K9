@@ -12,10 +12,14 @@ linear-gradient ()
     #A1045A Magenta
     #FF0800 Blood
     #7E699E Light Lavender
+        #C8BFD6 Lighter Lavender
 
     #C0C0C0 Silver
     #C5C6D0 Cloud
     #020403 Obsidian
+
+    Pride Color :
+        background: linear-gradient(90deg, #77d6ff, #ff8dd6, #5b3b1e, #ff0169, #ff7a00, #ffd600, #1cd14f, #0095f6, #7638fa);
 
     
 ¬ Rodan's skin is burgundy-colored and possesses a texture similar to molten rock with bumps and ridges along his chest and back. The lower-edges of his wing membrane appear to be lined with heated, red-glowing cracks, making it appear as if Rodan's wings are smoldering or are oozing lava when he's in flight. His injury from Mothra's stinger indicates Rodan does not bleed and revealed his body has a bright-yellow internalized light underneath the opaque skin. Using his wings to balance himself, Rodan can both walk and stand upright when he's not in flight.
@@ -23,7 +27,17 @@ linear-gradient ()
     - Known to some ancient civilizations as the "Fire Demon"
     - Rodan has razor-sharp talons which are sufficient to rend and cut most materials.
 
+¬   最近メッセージです。
+    トムちゃん
+    あなたことが好き。
+    しかしあなたが私ことが好きことが見えないから。
+    私は辞めます。
+    本当にありがとう。
+    外国人が好きじゃないな分かった。
+    文化がたくさん違うとか。
+
 « user-select: none; chống copy
+« thư viện likn ở bên trên còn css link ở bên dưới
  -->
 <!-- v.4
 1,Selector 
@@ -282,4 +296,85 @@ linear-gradient ()
         counter-increment : tênbộđếm
     hiển thị kếy quả đến
         counter(tênbộđếm)
+-->
+<!-- v.12
+    - Buổi 15 -
+Xây dựng Gris System
+Quy ước :
+    .container : khung của các section
+    .row : flex container
+    .col-{number} : flex item
+    > number 1 - 12
+
+    > Col nằm trong Row
+
+Responsive : đi từ màn hình nhỏ (Mobile First)
+
+    <  576px : col-{number}
+    >= 576px : col-sm-{number}
+    >= 768px : col-md-{number}
+    >= 992px : col-lg-{number}
+    >= 1200px : col-xl-{number}
+    >= 1400px : col-xxl-{number}
+-->
+<!-- v.13
+    - Buổi 16 -
+Animation
+Thuộc tính animation
+    - tạo hiệu ứng phức tạp
+    - viết kịch bản cho hiệu ứng
+    - sử dụng @keyframes
+    « cứ pháp @keyframes
+        @keyframes tênkeyframes(tự đặt) {
+            0%{}
+            value%{}
+            100%{}
+        }
+    « cú pháp animation
+        - animation-name : tênkeyframe
+        - animation-duration : thời gian hoàn thành hiệu ứng
+        - animation-timing-function : giống transition
+        - animation-delay : thời gian trước khi hiệu ứng chạy
+        - animation-interation-count : số lần chạy hiệu ứng (infinite : chạy vô hạn)
+        - animation : thuộc tính gộp
+    
+ -->
+<!-- v.14
+    -  -
+1, Shadow
+    - box-shadow: đổ bóng khối khối(box)
+        box-shadow: h-offset v-offset blur spread color
+            h theo chiều ngang
+            v theo chiều dọc
+            trái phải tuỳ theo giá trị - +
+            blur : độ nhoè
+            spread : độ to của bóng
+
+    - text-shadow : đổ bóng văn bản
+        text-shadow: h-offset v-offset spread color
+
+2, Biến : lưu trữ dữ liệu tạm thời trong bộ nhớ RAM
+    - biến toàn cục (global variable)
+        khai báo trong :root
+        sử dụng ở khắp mọi nơi kể từ sau vị trí khai báo
+    - biến cục bộ (local variable)
+        khai báo trong 1 selector cụ thể
+        chỉ được sử dụng trong selector đó và các con của nó
+    > gọi biến dùng var nhé
+    > thường tách ra 1 file css riêng
+    > biến trong css chỉ lưu trữ các giá trị của các thuộc tính css
+
+@import url(" link css "); - link 1 css khác vào css hiện thực
+
+3, thứ tự ưu tiên
+    0. !important
+    1. inline
+    2. id
+    3. class
+    4. tag
+    « phạm vi tác động càng nhỏ thì độ ưu tiên càng cao
+
+    các cách tăng độ ưu tiên
+        - thứ tự : sau ưu tiên cao hơn trước
+        - selector chi tiết : độ ưu tiên cao hơn
 -->

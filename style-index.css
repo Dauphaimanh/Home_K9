@@ -8,6 +8,7 @@
 body {
   background: #d9d9d9;
   /* #AF8260, #FCEDD8 */
+  font-family: "Courier New", Courier, monospace;
 }
 /* số đếm 1-8 */
 .eight form button {
@@ -56,10 +57,10 @@ body {
   height: 25px;
   border: 1px solid #fa5f55;
   border-radius: 3px;
-  background-color: #bbff99;
+  /* background-color: #bbff99; */
   background-image: linear-gradient(
     319deg,
-    #bbff99 0%,
+    #c898d0 0%,
     #ffec99 37%,
     #ff9999 100%
   );
@@ -71,25 +72,41 @@ body {
 }
 .mini-box button:hover {
   cursor: help;
-  transform: scale(1.5);
   border: 1px solid #fff;
+  transition: all 666ms ease;
+  transform: translateX(-100%);
+  /* transform: scale(1.5); */
   span {
     visibility: visible;
   }
 }
 /* for fun */
 
+/* separate line for */
+.se-line {
+  cursor: none;
+  background: linear-gradient(270deg, #cc4fc5, #020403 90%);
+  background-clip: text;
+  color: transparent;
+}
+/* separate line for */
+
 /* breaking line for */
-.br-line {
+.br {
   display: flex;
   font-size: 1.2em;
   justify-content: center;
 
-  background: linear-gradient(to right, #c0c0c0, #020403 90%);
-  background-clip: text;
-  color: transparent;
+  .br-line {
+    background: linear-gradient(90deg, #c0c0c0, #020403 90%);
+    background-clip: text;
+    color: transparent;
 
-  cursor: none;
+    cursor: none;
+    border-image-slice: 1;
+    border-bottom: 2px solid;
+    border-image-source: linear-gradient(90deg, #fccd71, #cc4fc5, #455ad1);
+  }
 }
 /* breaking line for */
 
@@ -100,7 +117,6 @@ body {
   flex-direction: column;
   justify-content: flex-end;
   align-items: flex-end;
-  /* border: 1px solid #c54b8c; */
   a {
     min-width: 5%;
     height: 1.3em;
@@ -110,7 +126,7 @@ body {
     margin: 3px 10px;
     padding: 7px 21px;
     background: linear-gradient(
-      to right,
+      90deg,
       #b2b9c1,
       #d8dcdf,
       #ff7200,
@@ -154,13 +170,126 @@ body {
 /* end of san (17-24) */
 
 /* start of shi (25-32) */
+.yon {
+  margin: 4% auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .shi {
-  width: 400px;
+  width: 700px;
   padding: 10px;
-  border: 1px solid #dd571c;
+  border: 2px solid #dd571c;
 
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 15px;
+
+  background-color: #2d7dd2;
+  background-image: linear-gradient(315deg, #2d7dd2 0%, #97cc04 74%);
+
+  div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    button {
+      padding: 6px 26px;
+      border: none;
+      border-radius: 4px;
+    }
+  }
+}
+
+.shi div button:hover {
+  cursor: pointer;
+  background-color: #ffffff;
+  background-image: linear-gradient(315deg, #2d7dd2 1%, #ff4c4c 74%);
+
+  transform: translateY(-16%);
+  transition: all 333ms linear;
 }
 /* end of shi (25-32) */
+
+/* start of go (33 - 40) */
+.tsu {
+  margin: 3% auto;
+  padding: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: #0e141a;
+}
+
+.go {
+  display: grid;
+  grid-template-columns: 3fr 3fr;
+
+  width: 70%;
+  padding: 20px;
+  background: #151f28;
+
+  position: relative;
+  border: 1px solid #5c6670;
+  border-radius: 8px;
+  gap: 20px;
+
+  box-shadow: 2px 7px 21px -2px rgba(242, 94, 94, 0.75);
+  -webkit-box-shadow: 2px 7px 21px -2px rgba(242, 94, 94, 0.75);
+  -moz-box-shadow: 2px 7px 21px -2px rgba(242, 94, 94, 0.75);
+
+  .iner a {
+    display: grid;
+    place-content: center;
+    position: relative;
+
+    height: 60px;
+    border: 2px solid #75808a;
+    border-radius: 6px;
+
+    background: #2b333b;
+    color: white;
+    font-size: 1.325rem;
+    font-weight: bold;
+    text-decoration: none;
+  }
+}
+/* end of go (33 - 40) */
+
+/* The Citadel at the End of Line */
+.br .nd-line {
+  margin: 2% 0;
+  cursor: pointer;
+  position: relative;
+
+  border: none;
+  background: transparent;
+  font-size: 1.5rem;
+  font-family: "Courier New", Courier, monospace;
+
+  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition-duration: 1500ms;
+}
+
+.br button:focus::after,
+.br button:hover:after {
+  width: 100%;
+  left: 0;
+}
+
+.br button:after {
+  content: "";
+  pointer-events: none;
+  bottom: -2px;
+  left: 50%;
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background: linear-gradient(to right, #f35b04, #e288f9, #0cbaba, #1828ff);
+  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition-duration: 1500ms;
+  transition-property: width, left;
+}
+/* The Citadel at the End of Line */

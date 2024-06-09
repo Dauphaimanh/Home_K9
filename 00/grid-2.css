@@ -1,0 +1,11 @@
+.products {
+  padding: 30px 0;
+}
+
+.product-item {
+  background: #7e699e6c;
+  background: #c8bfd6;
+
+  padding: 8px;
+  border-radius: 8px;
+}

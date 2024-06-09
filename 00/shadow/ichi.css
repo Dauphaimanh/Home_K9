@@ -1,0 +1,29 @@
+body {
+  font-family: "Courier New", Courier, monospace;
+}
+
+.box {
+  width: 200px;
+  height: 200px;
+  background: #29e229;
+  margin: 10% auto;
+
+  box-shadow: 5px 5px #c1c1c1, 10px 10px #a74e4e, 15px 15px #f9f954,
+    20px 20px #ff4e4e, 25px 25px #5353ff, 30px 30px #29e229;
+}
+
+h2 {
+  text-align: center;
+  font-size: 1.2em;
+  text-shadow: 5px 5px 5px #525252;
+}
+
+h3 {
+  text-align: center;
+  font-size: 3.5em;
+  color: #fff;
+
+  text-shadow: 1px 1px 1px #000, 1px -1px 1px #000, -1px 1px 1px #000,
+    -1px -1px 1px #000, 1px 1px 1px #000, 1px -1px 1px #000, -1px 1px 1px #000,
+    -1px -1px 1px #000;
+}
