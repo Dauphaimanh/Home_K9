@@ -183,41 +183,24 @@ hito futa mit yon tsu
   justify-content: space-between;
   align-items: flex-end;
   gap: 8px;
+}
+.shi form button {
+  margin: 0 5px;
+  padding: 8.5px 30px;
+  font-weight: 600;
 
-  form button {
-    margin: 1px 5px;
-    padding: 6px 21px;
-    color: #020403;
-    background: #d9d9d9;
-    cursor: pointer;
-    font-weight: 600;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-
-    /* border: none; */
-    border: 1px solid; /* last version is border-bottom */
-    border-image-slice: 1;
-    border-image-source: linear-gradient(
-      to right bottom,
-      #5ce94a,
-      #93d1fd,
-      #f55151
-    );
-
-    &:hover {
-      scale: 1.05;
-      background: linear-gradient(
-        to right top,
-        #81c8fb 20%,
-        #d88b4b,
-        #abaf30 80%
-      );
-      transition: all 222ms linear;
-    }
-  }
+  border: 1px solid transparent;
+  border-radius: 3px;
+}
+.shi form button:hover {
+  background: linear-gradient(
+    to right,
+    #fffdc2,
+    #fffdc2 15%,
+    #ff611e 15%,
+    #d2f585 85%,
+    #fffdc2 85%
+  );
 }
 /* end of shi (25-32) */
 
@@ -285,68 +268,8 @@ hito futa mit yon tsu
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  gap: 8px;
 }
 .nana form button {
-  margin: 0 5px;
-  padding: 8.5px 30px;
-  font-weight: 600;
-
-  border: 1px solid transparent;
-  border-radius: 3px;
-}
-.nana form button:hover {
-  background: linear-gradient(
-    to right,
-    #fffdc2,
-    #fffdc2 15%,
-    #ff611e 15%,
-    #d2f585 85%,
-    #fffdc2 85%
-  );
-}
-/* start of nana (49 - 56) */
-
-/* start of hachi (57 - 64 */
-.hachi {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-}
-.hachi form button {
-  margin: 3px 10px;
-  padding: 8px 50px;
-  font-weight: bold;
-  border: 1px solid transparent;
-  border-radius: 4px;
-}
-.hachi form button:hover {
-  background-image: linear-gradient(
-    45deg,
-    #f58d39 25%,
-    #f6f0cf 25%,
-    #f6f0cf 50%,
-    #f58d39 50%,
-    #f58d39 75%,
-    #f6f0cf 75%,
-    #f6f0cf 100%
-  );
-  background-size: 10px 10px;
-  border-radius: 4px;
-  transform: translateX(10%);
-  transition: all 111ms linear;
-}
-/* end of hachi (57 - 64 */
-
-/* start of kyu (𓆟) */
-.kyu {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: flex-end;
-}
-.kyu form button {
   margin: 3px 10px;
   padding: 7px 30px;
   font-weight: bold;
@@ -356,7 +279,7 @@ hito futa mit yon tsu
   color: #fff;
   background-color: #444141;
 }
-.kyu form button:hover {
+.nana form button:hover {
   background-image: linear-gradient(
     90deg,
     #53cbef 0%,
@@ -372,30 +295,22 @@ hito futa mit yon tsu
     background-position: 20vw;
   }
 }
+/* start of nana (49 - 56) */
+
+/* start of hachi (57 - 64 */
+/* end of hachi (57 - 64 */
+
+/* start of kyu (𓆟) */
 /* end of kyu (𓆟) */
 
-/* separate line for */
-.se-line {
-  background: linear-gradient(270deg, #cc4fc5, #020403 90%);
-  background-clip: text;
-  color: transparent;
-}
-/* separate line for */
-
-/* breaking line for */
+/* The Citadel at the End of Line */
 .br {
   display: flex;
-  font-size: 1.2em;
   justify-content: center;
+  align-items: center;
 
-  .br-line {
-    background: linear-gradient(90deg, #c0c0c0, #020403 90%);
-    background-clip: text;
-    color: transparent;
-  }
+  margin: 2% 0;
 }
-/* breaking line for */
-/* The Citadel at the End of Line */
 .br .nd-line {
   margin: 2% 0;
   cursor: pointer;
