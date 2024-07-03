@@ -182,34 +182,6 @@ hito futa mit yon tsu
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-end;
-  gap: 8px;
-}
-.shi form button {
-  margin: 0 5px;
-  padding: 8.5px 30px;
-  font-weight: 600;
-
-  border: 1px solid transparent;
-  border-radius: 3px;
-}
-.shi form button:hover {
-  background: linear-gradient(
-    to right,
-    #fffdc2,
-    #fffdc2 15%,
-    #ff611e 15%,
-    #d2f585 85%,
-    #fffdc2 85%
-  );
-}
-/* end of shi (25-32) */
-
-/* start of go (33-40) */
-.go {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: flex-end;
   gap: 7px;
 
   form button {
@@ -237,6 +209,30 @@ hito futa mit yon tsu
     }
   }
 }
+/* end of shi (25-32) */
+
+/* start of go (33-40) */
+.go {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 7px;
+}
+.go form button {
+  margin: 0 5px;
+  padding: 6px 20px;
+  font-weight: 600;
+
+  background: linear-gradient(to right, #914eb5, transparent),
+    url(https://grainy-gradients.vercel.app/noise.svg);
+  filter: contrast(170%) brightness(1000%);
+}
+.go form button:hover {
+  background: linear-gradient(to left, #832713a3 55%, transparent),
+    url(https://grainy-gradients.vercel.app/noise.svg);
+  filter: contrast(170%) brightness(1000%);
+}
 /* end of go (33-40) */
 
 /* start of roku (40 -48 */
@@ -244,32 +240,8 @@ hito futa mit yon tsu
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  gap: 7px;
 }
 .roku form button {
-  margin: 0 5px;
-  padding: 6px 30px;
-  font-weight: 600;
-
-  background: linear-gradient(to right, #0000ff, transparent),
-    url(https://grainy-gradients.vercel.app/noise.svg);
-  filter: contrast(170%) brightness(1000%);
-}
-.roku form button:hover {
-  color: #fff;
-  background: linear-gradient(to left, #ef4a25 55%, transparent),
-    url(https://grainy-gradients.vercel.app/noise.svg);
-  filter: contrast(170%) brightness(1000%);
-}
-/* end of roku (40 -48)*/
-
-/* start of nana (49 - 56) */
-.nana {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-.nana form button {
   margin: 3px 10px;
   padding: 7px 30px;
   font-weight: bold;
@@ -279,7 +251,7 @@ hito futa mit yon tsu
   color: #fff;
   background-color: #444141;
 }
-.nana form button:hover {
+.roku form button:hover {
   background-image: linear-gradient(
     90deg,
     #53cbef 0%,
@@ -295,6 +267,9 @@ hito futa mit yon tsu
     background-position: 20vw;
   }
 }
+/* end of roku (40 -48)*/
+
+/* start of nana (49 - 56) */
 /* start of nana (49 - 56) */
 
 /* start of hachi (57 - 64 */
