@@ -26,3 +26,4 @@ if (km < 0) {
     money = (15000 * 1 + 13500 * 4 + 11000 * (km - 5)) * 0.9;
     document.write(`Số tiền phải trả = ${money}`);
 }
+s

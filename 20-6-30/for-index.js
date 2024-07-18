@@ -18,6 +18,7 @@ for (var i = 0; i <= content.length; i++) {
 }
 document.write(index);
 
+
 var spans = document.querySelectorAll("span");
 var position = 0;
 function changeColor() {

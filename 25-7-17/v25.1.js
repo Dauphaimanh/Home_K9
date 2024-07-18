@@ -4,4 +4,3 @@ Yêu cầu tri tiết :
     • Ép rang buộc kiểu dữ liệu là số
     • Nếu dữ liệu truyền vào không hợp lệ, trả về thông báo lỗi
 */
-

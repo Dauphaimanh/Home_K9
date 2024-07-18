@@ -80,6 +80,5 @@ function tututuMaxverstappen (categories) {
     return firstOmen;
 }
 
-
 var result = tututuMaxverstappen(categories);
 console.log(result);

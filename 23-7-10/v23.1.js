@@ -21,6 +21,7 @@ function symNum(m) {
   return l === hexNum;
 }
 
+
 // ham
 function symetric(n) {
   var m = n;
