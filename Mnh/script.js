@@ -39,7 +39,6 @@ function createCustomers(customers) {
     // Trả về mảng newCustomers
     return newCustomers;
   }
-
   
 const customers = [
   { name: "Nguyễn Văn A", age: 11, address: "Ha Noi" },
