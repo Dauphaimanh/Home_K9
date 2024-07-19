@@ -76,6 +76,6 @@ categories.forEach(function (category) {
 return options;
 }
 
-const optionsHTML = centerOption(categories);
-selectElement.innerHTML = optionsHTML;
+var toHTML = centerOption(categories);
+selectElement.innerHTML = toHTML;
   
