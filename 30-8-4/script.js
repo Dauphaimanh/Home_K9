@@ -10,13 +10,8 @@ var offsetLeft = 0;
 var rate = 0;
 
 function handleDrag(e) {
-  // Calculate movement relative to progress bar
   var spaceMove = e.clientX - progressBar.offsetLeft;
-
-  // Ensure rate stays within 0-100
   rate = Math.max(0, Math.min(100, (spaceMove / progressBarWidth) * 100));
-
-  // Update progress bar and timer (if displayed)
   progress.style.width = `${rate}%`;
   updateTimer(rate);
 }
@@ -33,22 +28,22 @@ function updateTimer(newRate) {
 }
 
 progressBar.addEventListener('mousedown', function (e) {
-  if (e.button === 0) { // Check for left mouse button click
+  if (e.button === 0) {
     isDragging = true;
     offsetX = e.offsetX;
     offsetLeft = progressBar.offsetLeft;
-    handleDrag(e); // Update immediately on click
+    handleDrag(e);
     document.addEventListener('mousemove', handleDrag);
   }
 });
 
 progressSpan.addEventListener('mousedown', function (e) {
-  if (e.button === 0) { // Check for left mouse button click
+  if (e.button === 0) {
     e.stopPropagation();
     isDragging = true;
     offsetX = e.offsetX;
     offsetLeft = e.target.offsetLeft;
-    handleDrag(e); // Update immediately on click
+    handleDrag(e);
     document.addEventListener('mousemove', handleDrag);
   }
 });
@@ -57,7 +52,7 @@ document.addEventListener('mouseup', function () {
   document.removeEventListener('mousemove', handleDrag);
   if (isDragging) {
     isDragging = false;
-    audio.currentTime = (audio.duration / 100) * rate; // Update audio time
+    audio.currentTime = (audio.duration / 100) * rate;
   }
 });
 
