@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>#Details Element</title>
+    <style>
+        body {
+            background: #FFF8E7;
+            font-family: 'Courier New', Courier, monospace;
+            margin: 4% auto;
+        }
+        
+        .rmore {
+            padding: 10px;
+            border: 2px solid #020403;
+            border-radius: 6px;
+            background-color: #e4eaef;
+            margin: 0 50% 0 2%;
+            summary {
+                color: tomato;
+                font-size: 1.1em;
+                list-style-type: '♲ ';
+            }
+            em {
+                padding: 2px;
+                color: #fff;
+                background-color: #E94159;
+                border-radius: 4px;
+            }
+        }
+        details[open] > summary {
+            list-style-type: '♻ ';
+        }
+        pre {
+            color: #fff;
+            background: #30353b;
+            padding: 0.3em;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <details class="rmore">
+        <summary><span style="color: #020403;">Read more </span><small><em>(Th 5 27 thg 6)</em></small></summary>
+        <p>
+            A volcanic internal combustion system of magma flows throughout a body covered in rock-like scales that act as geothermal armor. While much larger in size, Rodan has a skeletal structure similar to that of a Pteranodon - one of the earliest vertebrates known to have developed the power of flight. Just as Kong is the king of the primates, Rodan may have once been the king of the skies.
+        </p>
+        <hr>
+        <pre><code>
+            details {
+                padding: 10px;
+                background-color: #e4eaef;
+                border-radius: 6px;
+            }
+        </code></pre>
+    </details>
+</body>
+</html>

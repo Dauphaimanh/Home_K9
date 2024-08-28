@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buổi 24</title>
+    <style>
+        div {
+            background: #D9D9D9;
+            font-family: 'Courier New', Courier, monospace;
+            margin: 4% 2%;
+            padding: 10px 0;
+            display: flex;
+            flex-wrap: wrap;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <pre>
+            // Bài 1 : 
+        </pre>
+    </div>
+    <div>
+        <pre>
+            // Bài 2 : sắp xếp tăng dần theo tuổi và thêm thuộc tính mới
+
+            var customers = [
+                { name: "Nguyễn Văn A", age: 11, address: "Ha Noi" },
+                { name: "Nguyễn Văn B", age: 2, address: "Hai Phong" },
+                { name: "Nguyễn Văn C", age: 12, address: "TP.HCM" },
+            ];
+            
+            var result = createCustomers(customers);
+            console.log(result);
+            
+
+            function createCustomer(customer) {
+                return {
+                name: customer.name,
+                age: customer.age,
+                address: customer.address,
+                shortName: customer.name.split(' ').slice(0, 2).join(' ')
+                };
+            };
+
+            function createCustomers(customers) {
+                var arrange = customers.sort((a, b) => a.age - b.age);
+                var newCustomers = [];
+                
+                for (var customer of arrange) {
+                    var newCustomer = createCustomer(customer);
+                    newCustomers.push(newCustomer);
+                }
+                return newCustomers;
+            }
+        </pre>
+    </div>
+    <div>
+        <pre>
+            // Bài 3 : 
+        </pre>
+    </div>
+    
+    <script src="./v24.2.js"></script>
+</body>
+</html>

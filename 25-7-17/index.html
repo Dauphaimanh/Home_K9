@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buổi 25</title>
+    <style>
+        body {
+            background: #D9D9D9;
+            font-family: 'Courier New', Courier, monospace;
+            margin: 4% 2%;
+        }
+        summary {
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: tomato;
+            list-style-type: '♲ ';
+        }
+        details[open] > summary {
+            list-style-type: '♻ ';
+        }
+        pre {
+            padding: 10px 0;
+            display: flex;
+            flex-wrap: wrap;
+            border: 2px solid #020403;
+            border-radius: 6px;
+            background-color: #c8d2da;
+        }
+        /* #B9B697 */
+    </style>
+</head>
+<body>
+        <details>
+            <summary>Bài 1</summary>
+            <pre>
+                Bó Tay
+            </pre>
+        </details>
+
+        <details>
+            <summary>Bài 2</summary>
+            <pre>
+                function Price(money) {
+                    this.money = money;
+                }
+                
+                Price.prototype.getCurrency = function (coin) {
+                    return `${this.money.toLocaleString('vi-VN')}${coin || (đ)}`;
+                };
+                
+                var price = new Price(12000);
+                console.log(price.getCurrency('¥'));
+            </pre>
+        </details>
+        <details>
+            <summary>Bài 3</summary>
+            <pre>
+                function tututuMaxverstappen (categories) {
+                    var firstOmen = [];
+                    var secondCosmos = [];
+                    for (var arabica of categories) {
+                        secondCosmos[arabica.id] = arabica;
+                    }
+                    for (var arabica of categories) {
+                        if (arabica.parent === 0) {
+                            firstOmen.push(arabica);
+                        } else {
+                            var bermudaTriangle = secondCosmos[arabica.parent];
+                            if (!bermudaTriangle.children) {
+                                bermudaTriangle.children = [];
+                            }
+                            bermudaTriangle.children.push(arabica);
+                        }
+                    }
+                    return firstOmen;
+                }
+                
+                var result = tututuMaxverstappen(categories);
+                console.log(result);
+            </pre>
+        </details>
+        <details>
+            <summary>Bài 4</summary>
+            <pre>
+                Array.prototype.reduce2 = function (callback, inValue) {
+                    var cosSimulate = inValue;
+                    for (let i = 0; i < this.length; i++) {
+                        cosSimulate = callback(cosSimulate, this[i], i, this);
+                    }
+                    return cosSimulate;
+                };
+                
+                
+                var numbers = [1, 3, 5, 7, 9, 11];
+                var result = numbers.reduce2((cosSimulate, preValue) => cosSimulate + preValue, 0);
+                console.log(result);
+            </pre>
+        </details>
+
+        
+    <script src="./v25.1.js"></script>
+    <script src="./v25.2.js"></script>
+    <script src="./v25.3.js"></script>
+    <script src="./v25.4.js"></script>
+</body>
+</html>

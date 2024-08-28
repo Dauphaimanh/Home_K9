@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>#Scope</title>
+    <style>
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            background-color: #DAE3BB;
+        }
+        .scope {
+            margin: 5% 2%;
+            font-size: 0.9em;
+            background-color: #a4d3e7;
+            padding: 7px;
+            border-radius: 4px;
+        }
+
+        .under-h4 {list-style-type: disc;}
+
+        .scope-script {
+            background-color: #ecc7b0;
+            padding: 7px;
+            border-radius: 4px;
+            max-width: fit-content;
+        }
+
+        span {font-weight: 600;}
+        
+        .tips li {list-style-type: decimal;}
+        
+        .tips li span {color: #EA742C;}
+
+        .tip li {list-style-type: circle;}
+
+        .sleep-disorder {
+            h2 {text-align: center; color: #DD7E82;}
+            .under-sleep-disorder {padding: 10px;}
+
+            margin: 5% 2%;
+            padding: 7px;
+            font-size: 0.8em;
+            line-height: 1.2;
+            color: #fff;
+            background-color: #474749;
+            border-radius: 4px;
+
+            .list-style-type-none {list-style-type: none;}
+            .list-style-type-black {list-style-type: disc;}
+        }
+    </style>
+</head>
+<body>
+    <div class="scope">
+        <h3>Các loại phạm vi truy cập trong JavaSript :</h3>
+        <ul>
+            <li><span>Phạm vi toàn cục (Global scope) :</span></li>
+            <ul>
+                <li>Biến được khai báo bên ngoài bất kì hàm nào</li>
+                <li>Có thể truy cập từ bất cứ đâu trong mã</li>
+                <li>Nên tránh sử dụng biến toàn cục vì dễ gây ra xung đột và khó quản lý</li>
+            </ul>
+
+            <li><span>Phạm vi cục bộ (Local scope) :</span></li>
+            <ul>
+                <li>Biến được khai báo bên trong một hàm</li>
+                <li>Chỉ có thể truy cập được bên trong hàm đó</li>
+                <li>Giúp tránh xung đột tên và làm hàm trở lên dễ đọc hơn</li>
+            </ul>
+
+            <li><span>Phạm vi khối (Block scope) :</span></li>
+            <ul>
+                <li>Được giới hạn bởi 1 cặp dấu ngoặc <code style="background: #444; color: #fff;">{}</code> </li>
+                <li>Được giới thiệu từ ES6 với từ khoá <code style="background: #444; color: #fff;">let</code> và <code style="background: #444; color: #fff;">const</code> </li>
+                <li>Giúp quản lý biến tốt hơn và tránh bị các lỗi phổ biến</li>
+            </ul>
+            <br>
+        <h4>Tại sao phạm vi truy cập lại quan trọng ?</h4>
+            <ul class="under-h4">
+                <li><span>Tránh xung đột tên : </span>Mỗi biến có một phạm vi riêng, giúp tránh tình trạng hai biến có cùng tên nhưng giá trị khác nhau</li>
+                <li><span>Quản lý bộ nhớ hiệu quả : </span>Biến cục bộ sẽ bị huỷ bỏ khi hàm kết thúc, giúp giải phóng bộ nhớ</li>
+                <li><span>Làm cho mã rõ ràng hơn : </span>Phạm vi giúp xác định nơi nào một biến có được sử dụng, giúp cho mã dễ đọc và bảo trì hơn</li>
+            </ul>
+            <pre class="scope-script">
+let message = 'Welcome here '; // global scope
+
+function greet(name) {
+let greeting = 'Hello, ' // local scope
+console.log(greeting + name + ' ' + message + 'how are you');
+}
+greet('Alice')
+            </pre>
+        </ul>
+    </div>
+
+    <code>
+        <span>Sleeping Too Much: Does It Make You Dumber?</span>
+        <br>
+        While there's no direct evidence suggesting that excessive sleep makes you "dumb," it can certainly impact cognitive function.
+        <br>
+        Here's why:
+        <ul>
+            <li><span>Disrupted Sleep-Wake Cycle: </span>Sleeping too much can disrupt your body's natural sleep-wake cycle, leading to feelings of grogginess, difficulty concentrating, and reduced alertness.</li>
+            <li><span>Reduced Productivity: </span>Excessive sleep can interfere with your daily routine, affecting your work or school performance</li>
+            <li><span>Potential for Underlying Issues: </span>If you're consistently sleeping more than usual, it could be a symptom of an underlying health condition like depression pr sleep apnea.</li>
+        </ul>
+        <span>It's important to find a balance.</span> Most adult need around 7-9 hours of sleep per night. If you're regularly sleeping significantly more than this and experiencing issues, consider consulting with a healthcare professional to rule out any underlying health concerns. <br>
+        <p>Sleep is a crucial component of overall health and well-being. It's during sleep that your body repair itself, builds muscle, and strengthens your immune system.</p>
+
+        <span>Why is Sleep Important ?</span>
+            <ul>
+                <li><span>Cognitive Function : </span>Sleep is essential for memory consolidation, learning, and problem-solving</li>
+                <li><span>Physical Health : </span>It aids in regulating hormones, controlling appetite, and maintaining a healthy weight</li>
+                <li><span>Emotional Well-being : </span>Sufficient sleep helps regulate mood and reduces stress</li>
+                <li><span>Immune Function</span>Sleep is vital for a strong immune system to fight off infections</li>
+            </ul>
+        <span>Tips for Improving Sleep Quality :</span>
+            <ul class="tips">
+                <li><span>Create a Sleep-Conductive Environment :</span></li>
+                    <ul class="tip">
+                        <li>Make your bedroom dark, quiet , and cool</li>
+                        <li>Invest in comfortable bedding</li>
+                        <li>Limit screen time before bed (the blue light can interfere with sleep)</li>
+                    </ul>
+                <li><span>Establish a Consistent Sleep Schedule :</span></li>
+                    <ul class="tip">
+                        <li>Try to go to the bed and wake up at the same time every day, even on weekends</li>
+                    </ul>
+                <li><span>Manage Stress :</span></li>
+                    <ul class="tip">
+                        <li>Incorporate relaxation techniques like meditation, deep breathing, or yoga into your routine</li>
+                    </ul>
+                <li><span>Watch Your Diet :</span></li>
+                    <ul class="tip">
+                        <li>Avoid heavy meals, caffeine, and alcohol close to bedtime</li>
+                        <li>Consider a light snack with trytophan-rich foods like turkey or bananas</li>
+                    </ul>
+                <li><span>Limit Daytime Diet :</span></li>
+                    <ul class="tip">
+                        <li>Short naps can be beneficial, but long naps can disrupt nighttime sleep</li>
+                    </ul>
+                <li><span>Regular Exercise :</span></li>
+                    <ul class="tip">
+                        <li>Physical activity can improve sleep quality, but avoid intense workouts close to bedtime</li>
+                    </ul>
+                <li><span>Limit Fluid Intake Before Bed :</span></li>
+                    <ul class="tip">
+                        <li>Reduce nighttime awakenings due to bathroom trips</li>
+                    </ul>
+                <li><span>Consider Sleep Aids :</span></li>
+                    <ul class="tip">
+                        <li>If sleep problems persist, consult a healthcare professional about potential sleep aids</li>
+                    </ul>
+            </ul>
+            <p>Remember, it might take time to establish good sleep habits. Be patient and consistent in your efforts</p>
+    </code>
+
+    <div class="sleep-disorder">
+        <h2>Sleep Disorders nad Natural Remedies</h2>
+        <ul class="under-sleep-disorder">
+            <li class="list-style-type-none"><span>Sleep disorders </span>are conditions that disrupt your sleep patterns, making it difficult to fall asleep, stay asleep, or both. THey can significantly impact your overall health and well-being. Some common sleep disorders include :</li>
+            <ul>
+                <li class="list-style-type-black"><span>Insomnia : </span>difficulty falling asleep, staying asleep, or waking up to early.</li>
+                <li class="list-style-type-black"><span>Sleep apnea : </span>Breathing repeatedly stops and starts during sleep.</li>
+                <li class="list-style-type-black"><span>Restless legs syndrome (RLS) : </span>A neurological disorder that causes an irresistible urge to move your legs, often at night.</li>
+                <li class="list-style-type-black"><span>Narcolepsy : </span>A chronic neurological disorder that causes excessive daytime sleepiness.</li>
+            </ul>
+
+            <li class="list-style-type-none"><span>Nature sleep remedies </span>are alternative approaches that may help improve sleep quality without the use of prescription medications. While these remedies can be effective for some people, it's important to consult with a healthcare professional before making any significant changes to your sleep routine. Some popular natural sleep remedies include :</li>
+            <ul>
+                <li class="list-style-type-black"><span>Improving sleep hygiene : </span>Establishing consistent sleep schedules, creating a relaxing bedtime routine, and ensuring a comfortable sleep environment.</li>
+                <li class="list-style-type-black"><span>Dietary changes : </span>Consuming a balanced diet, limiting caffeine and alcohol intake, and avoiding heavy meals close to bedtime.</li>
+                <li class="list-style-type-black"><span>Exercise : </span>Regular physical activity can improve sleep quality, but it's best to avoid intense workouts close to bedtime.</li>
+                <li class="list-style-type-black"><span>Stress management : </span>Techniques like meditation, deep breathing, and yoga can help reduce stress and promote better sleep.</li>
+                <li class="list-style-type-black"><span>Herbal supplements : </span>Some herbs, such as valerian root, chamomile, and passionflower, have been traditionally used to aid sleep. However, their effectiveness varies, and it's essential to consult with a healthcare professional before using them.</li>
+            </ul>
+            <p><span class="list-style-type-none">Remember : </span>While natural remedies can be helpful, they may not be suitable for everyone. If you're experiencing persistent sleep problems, it's advisable to consult with a doctor to determine the underlying cause and discuss appropriate treatment options.</p>
+        </ul>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>

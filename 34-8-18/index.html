@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buổi 34</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Doc Editor</h2>
+        <div class="inline">
+            <div class="sub-inline">
+                <div class="d-flex">
+                    <button class="file">File &#8642;</button>
+                    <div class="dropdown-menu">
+                        <button class="new">New</button>
+                        <button class="txt">Save as txt</button>
+                        <button class="pdf">Save as pdf</button>
+                    </div>
+                </div>
+                <input type="text" class="input" value="untitled">
+            </div>
+    
+            <div class="b-side">
+                <button class="bold">B</button>
+                <button class="underline">u</button>
+                <button class="italic">i</button>
+                <input type="color" class="color-btn">
+            </div>
+        </div>
+
+        <div class="content" contenteditable="true" spellcheck="false"></div>
+        <div class="box">
+            <div>
+                Character Count : <span class="length-char">0</span>
+                Word Count : <span class="number-char">0</span>
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html>

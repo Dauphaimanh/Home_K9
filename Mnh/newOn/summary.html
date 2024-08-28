@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>#Summary</title>
+    <!-- #FEF9F1 #E4EAEF #30353B -->
+    <style>
+        summary::marker {
+            color: tomato;
+            font-size: 1.2em;
+        }
+
+        summary {
+            padding: 10px;
+            color: #fff;
+            border-radius: 5px;
+            background-color: #354e6b;
+        }
+
+        details[open] summary {
+            border-radius: 5px 5px 0 0;
+        }
+
+        details {
+            background: #E4EAEF;
+            border-radius: 5px;
+        }
+
+        * {box-sizing: border-box;}
+
+        body {
+            font-family: system-ui, sans-serif;
+            margin: 20px;
+            background: #fff9f1;
+        }
+        article > *:first-child {margin: 0;}
+        article > * + * {margin: 0.75em 0 0 0;}
+
+        pre {
+            color: #fff;
+            background: #354e6b;
+            padding: 1em;
+            border-radius: 5px;
+        }
+
+        article {
+            padding: 10px;
+            margin: 0;
+        }
+
+        details code {
+            font-size: 1.1em;
+        }
+    </style>
+</head>
+<body>
+    <details>
+        <summary>Open</summary>
+        <article>
+            <pre>
+                <code>
+                    padding: 10px;
+                    background-color: tomato;
+                    border-radius: 5px;
+                </code>
+            </pre>
+        </article>
+    </details>
+</body>
+</html>

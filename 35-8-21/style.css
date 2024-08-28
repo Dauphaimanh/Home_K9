@@ -1,0 +1,56 @@
+/* CSS */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Courier New", Courier, monospace;
+  background-color: #000700;
+}
+
+.countdown {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+
+  margin: 0 auto;
+  height: 100vh;
+
+  h2 {
+    color: #e4ddbd;
+  }
+
+  .counter {
+    display: flex;
+    justify-content: center;
+    font-size: 1.3em;
+
+    color: #e4ddbd;
+    background-color: tomato;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    padding: 10px;
+  }
+
+  .btn {
+    background-color: transparent;
+    border: 2px solid #e4ddbd;
+    border-radius: 99px;
+    cursor: pointer;
+
+    padding: 7px 20px;
+    color: #e4ddbd;
+    display: block;
+  }
+
+  .btn:disabled {
+    cursor: not-allowed;
+    background-color: #444;
+  }
+}
