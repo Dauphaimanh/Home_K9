@@ -6,7 +6,7 @@
 /* font-family: "Baloo 2", sans-serif; */
 
 
-body {background-color: #0B0B0B; font-family: "Montserrat", system-ui;}
+body {background-color: #0B0B0B; font-family: "Handjet", sans-serif; letter-spacing: 0.1vh;}
 
 /* pack */
 
@@ -165,19 +165,18 @@ body {background-color: #0B0B0B; font-family: "Montserrat", system-ui;}
         .epsilon {background-color: #A3BBBF;}
     }
 
-    .ni {
+    /* .ni {
         .alpha-ni {background-color: #504098;}
         .beta-ni {background-color: #FD7CBD;}
         .gamma-ni {background-color: #984CC6;}
         .epsilon-ni {background-color: #303C66;}
-    }
+    } */
 
     .san {
-        .sigma-san h3 {color: #FFF;}
         .alpha-san {background-color: #F3486A;}
         .beta-san {background-color: #FF9679;}
         .gamma-san {background-color: #964063;}
-        .epsilon-san {background-color: #404469;}
+        .epsilon-san {background-color: #E4E9BE;}
     }
 
     .shi {
