@@ -1,0 +1,29 @@
+/* Style Com */
+
+@import url('https://fonts.googleapis.com/css2?family=Handjet:wght@100..900&display=swap');
+
+body {
+    background-color: #DBD7CC;
+    font-family: "Handjet", sans-serif;
+}
+
+div {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.2em;
+    max-width: fit-content;
+    margin-inline: auto;
+
+    padding: 7px 12px;
+    color: tomato;
+    border: 2px solid tomato;
+    border-radius: 7px;
+}
+
+p {
+    margin: 25px 30vh;
+    padding: 2px;
+    border: 1px solid #020403;
+    background-color: #f5f2ec;
+    
+    span {background-color: #000;}
+}

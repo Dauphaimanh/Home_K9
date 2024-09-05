@@ -5,11 +5,6 @@
   box-sizing: border-box;
  */
 
-body {
-  background: #e3e2e2;
-  /* #AF8260, #FCEDD8 */
-  font-family: "Courier New", Courier, monospace;
-}
 
 button {
   cursor: pointer;

@@ -28,7 +28,7 @@ body {background-color: #0B0B0B; font-family: "Handjet", sans-serif; letter-spac
   
   .ic {  display: grid;
     grid-template-columns: 1.3fr 0.7fr;
-    grid-template-rows: 1fr repeat(3, 0.8fr) 1.6fr;
+    grid-template-rows: repeat(5, 1fr);
     gap: 0px 0px;
     grid-auto-flow: row;
     grid-template-areas:
@@ -82,7 +82,7 @@ body {background-color: #0B0B0B; font-family: "Handjet", sans-serif; letter-spac
   
   .san {  display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(5, 1fr);
+    grid-template-rows: 1.3fr repeat(3, 0.7fr) 1.6fr;
     gap: 10px 0px;
     grid-auto-flow: row;
     grid-template-areas:
@@ -122,7 +122,7 @@ body {background-color: #0B0B0B; font-family: "Handjet", sans-serif; letter-spac
   
   .sigma-4 { grid-area: sigma-4; }
   
-  .alpha-4 { grid-area: alpha-4; }
+  .alpha-4 { grid-area: alpha-4; display: flex; justify-content: space-between; align-items: flex-end; padding: 6px 10px;}
   
   .beta-4 { grid-area: beta-4; }
   
@@ -131,9 +131,7 @@ body {background-color: #0B0B0B; font-family: "Handjet", sans-serif; letter-spac
   .epsilon-4 { grid-area: epsilon-4; }
   
   .omega-4 { grid-area: omega-4; }
-  
 
-  
 /* Another */
 
 .alpha, .beta, .gamma, .epsilon, .alpha-2, .beta-2, .gamma-2, .epsilon-2, .alpha-3, .beta-3, .gamma-3, .alpha-4, .beta-4, .gamma-4 ,.epsilon-4 {border-radius: 8px;}
@@ -156,15 +154,162 @@ body {background-color: #0B0B0B; font-family: "Handjet", sans-serif; letter-spac
     .san {
         .alpha-3 {background-color: #F2F2E8;}
         .beta-3 {background-color: #4A8B85;}
-        .gamma-3 {background-color: #031B1D;}
+        .gamma-3 {background-color: #031B1D; color: #4A8C85;}
     }
 
     .shi {
         .sigma-4 h3 {color: #F8A233; position: absolute; top: 5vh; font-family: "Handjet", sans-serif; font-size: 1.5em; letter-spacing: 0.5vh;}
-        .alpha-4 {background-color: #CC5F34;}
+        .alpha-4 {background-color: #CC5F34; 
+          span {text-transform: uppercase; font-size: 2em; font-weight: 600;}
+        }
         .beta-4 {background-color: #F8A233;}
         .gamma-4 {background-color: #6A693B;}
-        .epsilon-4 img {width: 100%; height: 100%;}
         .omega-4 p {color: #6A693B; margin: 0;}
+        .epsilon-4 img {width: 100%; height: 100%;}
     }
+}
+
+/* packer */
+
+.packer {  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr;
+  grid-auto-columns: 1fr;
+  grid-auto-rows: 1fr;
+  gap: 0px 20px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "go rok nan hac";
+    height: 400px;
+    margin: -30px 100px;
+}
+
+.go {  display: grid;
+  grid-template-columns: 1.3fr 0.7fr;
+  grid-template-rows: repeat(5, 1fr);
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "sigma-5 sigma-5"
+    "alpha-5 epsilon-5"
+    "beta-5 epsilon-5"
+    "gamma-5 epsilon-5"
+    "omega-5 omega-5";
+  grid-area: go;
+  gap: 10px 10px;
+}
+
+.sigma-5 { grid-area: sigma-5; }
+
+.alpha-5 { grid-area: alpha-5; }
+
+.beta-5 { grid-area: beta-5; }
+
+.gamma-5 { grid-area: gamma-5; }
+
+.epsilon-5 { grid-area: epsilon-5; }
+
+.omega-5 { grid-area: omega-5; }
+
+.rok {  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "sigma-6 sigma-6"
+    "alpha-6 alpha-6"
+    "beta-6 epsilon-6"
+    "gamma-6 epsilon-6"
+    "omega-6 omega-6";
+  grid-area: rok;
+  gap: 10px 10px;
+}
+
+.sigma-6 { grid-area: sigma-6; }
+
+.alpha-6 { grid-area: alpha-6; display: flex; justify-content: space-between; align-items: flex-end; padding: 6px 10px;}
+
+.beta-6 { grid-area: beta-6; }
+
+.gamma-6 { grid-area: gamma-6; }
+
+.epsilon-6 { grid-area: epsilon-6; }
+
+.gamma-6 { grid-area: gamma-6; }
+
+.nan {
+  display: grid; 
+  grid-template-columns: repeat(2, 1fr); 
+  grid-template-rows: repeat(5, 1fr); 
+  gap: 10px 10px; 
+  grid-template-areas: 
+    "sigma-7 sigma-7"
+    "alpha-7 alpha-7"
+    "beta-7 epsilon-7"
+    "gamma-7 epsilon-7"
+    "omega-7 omega-7"; 
+  grid-area: nan; 
+}
+.sigma-7 { grid-area: sigma-7; }
+.alpha-7 { grid-area: alpha-7; display: flex; justify-content: space-between; align-items: flex-end; padding: 6px 10px;}
+.beta-7 { grid-area: beta-7; }
+.gamma-7 { grid-area: gamma-7; }
+.epsilon-7 { grid-area: epsilon-7; }
+.omega-7 { grid-area: omega-7; }
+
+.hac {
+  display: grid; 
+  grid-template-columns: repeat(2, 1fr); 
+  grid-template-rows: 1.3fr repeat(3, 0.7fr) 1.6fr;
+  gap: 10px 10px; 
+  grid-template-areas: 
+    "sigma-8 sigma-8"
+    "alpha-8 alpha-8"
+    "beta-8 beta-8"
+    "gamma-8 gamma-8"
+    "omega-8 omega-8"; 
+  grid-area: hac; 
+}
+.sigma-8 { grid-area: sigma-8; }
+.alpha-8 { grid-area: alpha-8; }
+.beta-8 { grid-area: beta-8; }
+.gamma-8 { grid-area: gamma-8; }
+.omega-8 { grid-area: omega-8; }
+
+/* Another */
+
+.alpha-5, .beta-5, .gamma-5, .epsilon-5, .alpha-6, .beta-6, .gamma-6, .alpha-7, .beta-7, .gamma-7, .alpha-8, .beta-8, .gamma-8 {border-radius: 8px;}
+
+.packer {
+  .go {
+    .alpha-5 {background-color: #FFC0DB;}
+    .beta-5 {background-color: #FBF9E4;}
+    .gamma-5 {background-color: #8BCED7;}
+    .epsilon-5 {background-color: #FF8EBA;}
+  }
+
+  .rok {
+    .alpha-6 {background-color: #242021; color: #CA9B43;
+      span {text-transform: uppercase; font-size: 2em; font-weight: 600;}
+    }
+    .beta-6 {background-color: #FEFEFE;}
+    .gamma-6 {background-color: #CA9B43;}
+    .epsilon-6 img {width: 100%; height: 100%;}
+  }
+
+  .nan {
+    .alpha-7 {background-color: #618C79;
+      span {text-transform: uppercase; font-size: 2em; font-weight: 600;}
+    }
+    .beta-7 {background-color: #C8D4C8;}
+    .gamma-7 {background-color: #966C3A;}
+    .epsilon-7 img {width: 100%; height: 100%;}
+  }
+
+  .hac {
+    .alpha-8 {background-color: #EBE6DA;}
+    .beta-8 {background-color: #8E8E8E;}
+    .gamma-8 {background-color: #5F5942;}
+  }
 }
