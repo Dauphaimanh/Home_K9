@@ -1,0 +1,28 @@
+/* Mission Style */
+
+@import url('https://fonts.googleapis.com/css2?family=Handjet:wght@100..900&display=swap');
+
+* {margin: 0; padding: 0; box-sizing: border-box;}
+body {background-color: #F9F6EE; font-family: "Handjet", sans-serif; margin: 4% auto;}
+
+.rmore {
+    padding: 10px;
+    border: 2px solid #FFF;
+    border-radius: 6px;
+    background-color: #47867C;
+    margin: 0 50% 0 2%;
+
+    summary {
+        color: #FFF;
+        font-size: 1.1em;
+        list-style-type: '﹅ ';
+    }
+
+    p {
+        color: #5B4E4F;
+        background-color: #FFF8EA;
+        padding: 1.3em;
+        border-radius: 5px;
+    }
+}
+details[open] > summary {list-style-type: '﹆ ';}

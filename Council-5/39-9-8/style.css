@@ -1,5 +1,193 @@
 /* CSS Style */
 
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
 
 * {margin: 0;padding: 0;box-sizing: border-box;} /* reset CSS */
-body {background-color: #21272A;}
+body {background-color: #F9FAFB; font-family: "Nunito", sans-serif;}
+
+.overView {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  margin: 10% auto;
+}
+
+.container {
+  min-width: 700px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+  button {
+    cursor: pointer;
+    border: none;
+  }
+  button:hover {
+    filter: saturate(2) brightness(110%);
+  }
+  .container .title {
+    text-align: center;
+    margin: 100px auto 30px auto;
+  }
+  .container .title span {
+    background: linear-gradient(
+      90deg,
+      #5BA4F0 20%,
+      #149774 80%
+    );
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+  .form-todos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    height: 70px;
+    width: 100%;
+    margin: 30px;
+  }
+  .form-todos .btn-add {
+    height: auto;
+    border: none;
+    border-radius: 7px;
+    padding: 13px 30px;
+    background-color: #047857;
+    color: #fff;
+  }
+  .form-todos .form-search {
+    flex: 1;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+  }
+  .form-todos .form-search .ip-search {
+    width: 100%;
+    height: 75%;
+    padding: 7px;
+    border-radius: 7px;
+    border: 1px solid #ccc;
+    background-color: #F9FAFB;
+  }
+  .form-todos .form-search .btn-search {
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 10px;
+    display: flex;
+    font-size: 0.7em;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2654d1;
+    color: #fff;
+    border-radius: 7px;
+    border: none;
+  }
+  .place-todos {
+    width: 100%;
+  }
+  .place-todos .todo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 0 3px #787878;
+    border-radius: 7px;
+    padding: 14px 9px;
+    background-color: #FFF;
+  }
+  .place-todos .todo .action {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  .place-todos .todo .action .nav-action {
+    padding: 10px;
+    border-radius: 7px;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .place-todos .todo .action .nav-action.delete {
+    background-color: #c91b1b;
+  }
+  .place-todos .todo .action .nav-action.change {
+    background-color: #2654d1;
+  }
+  
+  .place-todos .todo .action .nav-action.complated {
+    background-color: #a7acb3;
+  }
+  .overlay.hidden {
+    visibility: hidden;
+    opacity: 0;
+  }
+  .overlay {
+    position: fixed;
+    inset: 0;
+    background-color: #ccc;
+    visibility: visible;
+    opacity: 0.9;
+    transition-property: opacity, visibility;
+    transition-timing-function: ease;
+    z-index: 1;
+  }
+  .table-add-todo {
+    position: absolute;
+    z-index: 3;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    min-width: 400px;
+    border-radius: 5px;
+    visibility: visible;
+    transition-property: opacity, visibility;
+    transition-timing-function: linear;
+    opacity: 1;
+  }
+  .table-add-todo.hidden {
+    opacity: 0;
+    visibility: hidden;
+  }
+  .table-add-todo .top {
+    padding: 16px;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .table-add-todo .top input {
+    width: 100%;
+    padding: 16px;
+    background-color: #f9fafb;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  .table-add-todo .bottom {
+    padding: 16px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  .table-add-todo .bottom .bottom-btn {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+  }
+
+  .table-add-todo .bottom .bottom-btn .add-cancel {color: #F9FAFB;}
+
+  .table-add-todo .bottom .bottom-btn.add-save {
+    background-color: #047857;
+    color: #fff;
+  }
