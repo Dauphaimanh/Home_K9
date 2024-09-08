@@ -1,3 +1,15 @@
 /* Lunch Style */
 
-* {padding: 0;margin: 0;box-sizing: border-box;}
+@import url('https://fonts.googleapis.com/css2?family=Handjet:wght@100..900&display=swap');
+
+* {padding: 0;margin: 0;box-sizing: border-box; font-family: "Handjet";}
+
+p {
+    max-width: fit-content;
+    margin-inline: auto;
+    margin: 10% auto;
+    border: 1px solid #B05B3B;
+    padding: 10px 20px;
+    font-size: 1.4em;
+    letter-spacing: 0.6px;
+}

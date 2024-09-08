@@ -23,6 +23,7 @@ body {background-color: #F9F6EE; font-family: "Handjet", sans-serif; margin: 4% 
         background-color: #FFF8EA;
         padding: 1.3em;
         border-radius: 5px;
+        letter-spacing: 0.5px;
     }
 }
 details[open] > summary {list-style-type: '﹆ ';}
