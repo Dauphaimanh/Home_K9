@@ -12,4 +12,5 @@ p {
     padding: 10px 20px;
     font-size: 1.4em;
     letter-spacing: 0.6px;
+    cursor: pointer;
 }
